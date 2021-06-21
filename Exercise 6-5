@@ -4,10 +4,10 @@ int main() {
    printf("Ingrese un año ");
    scanf("%x", &año);
    if (año % 400 == 0) {
-      printf("%x es un salto de año", año);
+      printf("%x no es un salto de año ", año);
    }
    else if (año % 100 == 0) {
-      printf("%x no e sun salto de año", año);
+      printf("%x es un salto de año", año);
    }
    else if (año % 4 == 0) {
       printf("%x es un salto de año", año);
