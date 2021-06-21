@@ -1,0 +1,30 @@
+#include <stdio.h>
+int centavos;
+int cuartos = 0;
+int dimes = 0;
+int monedasdecincocentavos = 0;
+int monedasdeuncentavo = 0;
+int main() {
+printf("Enter the number of cents we have: ");
+scanf("%d", &centavos);
+while(centavos != 0){
+if (centavos >= 25) {
+++cuartos;
+centavos -= 25;
+}if (centavos >= 10) {
+++dimes;
+centavos -= 10;
+}if (centavos >= 5) {
+++monedasdecincocentavos;
+centavos -= 5;
+}if (centavos >= 1) {
+++monedasdeuncentavo;
+--centavos;
+}if (centavos== 0){
+centavos;
+}
+}
+printf("%d cuartos %d dimes %d monedas de cincocentavos %d monedas de uncentavo ",
+cuartos, dimes, monedasdecincocentavos,monedasdeuncentavo);
+return(0);
+}
