@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+int numero;
+printf("ingrese el numero para ver si es primo ");
+scanf("%i",&numero);
+if(numero % 2 == 0){
+printf("es numero primo");
+}
+else{
+printf("no es numero primo");
+}
+return 0;
+}
