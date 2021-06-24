@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <math.h>
+char line[100]; 
 int a;
 int main(void){
  printf("Ingresar una califiacion ");
- scanf(" %i", &a);
+ fgets(line, sizeof(line), stdin);
+  sscanf(line, "%i", &a);
  if (a < 60) {
    printf("F");
  }
