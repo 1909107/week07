@@ -1,8 +1,10 @@
 #include <stdio.h>
+char line[100]; 
 int main() {
 int año;
 printf("Ingrese un año ");
-scanf("%i", &año);
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%i", &año);
 if (año % 400 == 0) {
 printf("%i no es un salto de año ", año);
 }
