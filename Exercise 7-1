@@ -1,4 +1,5 @@
 #include <stdio.h>
+char line[100]; 
 int main() {
 float ingrese,valor,conversion;
 float mil=25.4;
@@ -13,9 +14,11 @@ float legua=4.828032;
 float galon= 3.785411784;
 float barril=158.987294928;
 printf("ingrese 1 para mil, 2 para pulgada, 3 para tpie, 4 para yarda, 5 para rod, 6 para cadena, 7 para furlong, 8 para milla, 9 para legua, 10 para galon, 11 para barril\n");
-scanf("%f",&ingrese);
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%f", &valor);
 printf("ingrese el valor a comvertir ");
-scanf("%f",&valor);
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%f", &valor);
 if(ingrese==1){
 valor=valor*mil;
 printf("el valor en mil es %f", valor);
