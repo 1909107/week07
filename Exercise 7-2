@@ -1,4 +1,5 @@
 #include <stdio.h>
+char line[100]; 
 int año (int año) {
     if (((año % 4) == 0 && (año % 100) != 0) || (año % 400) == 0)
         return 1;
@@ -86,15 +87,18 @@ int main() {
     char last_day[3];
     int add_last_day;
     printf("Ingrese una fecha inicial de la siguiente manera (dia/mes/años): ");
-    scanf("%d/%d/%d", &start_date[0], &start_date[1], &start_date[2]);
+  fgets(line, sizeof(line), stdin);
+sscanf(line, "%d/%d/%d", &start_date[0], &start_date[1], &start_date[2]);
     printf("Ingrese una fecha final de la siguiente manera (dia/mes/años: ");
-    scanf("%d/%d/%d", &end_date[0], &end_date[1], &end_date[2]);
+    fgets(line, sizeof(line), stdin);
+    sscanf(line,"%d/%d/%d", &end_date[0], &end_date[1], &end_date[2]);
     if(checkDates(start_date, end_date)){
         printf("Valor invalido");
         return 1;
     }
     printf("Debe contarse el ultimo dia ? (Y/N) ");
-    scanf("%s", last_day);
+    fgets(line, sizeof(line), stdin);
+    scanf(line,"%s", last_day);
     if(last_day[0] == 'Y' || last_day[0] == 'y')
         add_last_day = 1;
     else
