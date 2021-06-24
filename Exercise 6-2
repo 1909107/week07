@@ -1,9 +1,11 @@
 #include <stdio.h>
+char line[100]; 
 int a;
 int main()
 {
 printf("Ingresar una calificacion ");
-scanf("%i",&a);
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%i", &a);
 if(a>=0 && a<=60){
 printf("F");
 }
