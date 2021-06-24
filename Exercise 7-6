@@ -1,11 +1,13 @@
 #include<stdio.h>
+char line[25];
 int main()
 {
 int cantidad, i, j = 0, a[100];
 int positivos=0;
 int negativos= 0;
 printf("ingrese la cantidad de numeros de la serie");
-scanf("%d", &cantidad);
+fgets(line, sizeof(line), stdin);
+sscanf(line,"%d", &cantidad);
 printf("ingrese los numeros de la serie ");
 for(i = 0; i < cantidad; i++)
 {
