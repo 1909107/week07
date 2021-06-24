@@ -1,12 +1,12 @@
 #include <stdio.h>
+char line[100]; 
 int main() {
 int horas,dinero,pago;
-
 printf("ingrese las horas que se trabajaron ");
 scanf("%i",&horas);
 printf("ingrese el pago por una hora de trabajo ");
-scanf("%i",&dinero);
-
+  fgets(line, sizeof(line), stdin);
+  sscanf(line, "%i", &dinero);
 if(horas>40){
 pago += dinero*40;
 pago+=(dinero*1.5)*(horas-40);
