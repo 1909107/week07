@@ -1,4 +1,5 @@
 #include <stdio.h>
+//Write a program that reads a character and prints out whether or not it is a vowel or a consonant//
 char line[100]; 
 int main() {
     char v;
