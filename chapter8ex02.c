@@ -1,4 +1,5 @@
 #include<stdio.h>
+//The total resistance of n resistors in parallel is, Suppose we have a network of two resistors with the values 400 and 200 . Then our equation would be//
 #include<stdlib.h>
 #include<math.h>
 char line[100]; 
