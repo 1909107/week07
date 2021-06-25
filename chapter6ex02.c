@@ -1,4 +1,5 @@
 #include <stdio.h>
+//write a program to generate a table of grades//
 char line[100]; 
 int a;
 int main()
