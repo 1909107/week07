@@ -1,4 +1,5 @@
 #include <stdio.h>
+//: Modify the pre vious program to print a + or - after the letter grade, based on the last digit of the score. The modifiers are listed in Table 6-4.//
 #include <math.h>
 char line[100]; 
 int a;
