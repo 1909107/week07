@@ -52,6 +52,9 @@ case 6: printf ("six "); break;
 case 7: printf ("seven "); break;
 case 8: printf ("eight "); break;
 case 9: printf ("nine "); break;
+case 10: printf ("eleven "); break;
+case 11: printf ("twelve "); break;
+  
 default: break;
 }
 return 0;
