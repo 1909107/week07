@@ -1,4 +1,5 @@
 #include <stdio.h>
+//The number 85 is pronounced "eighty-five," not "eight five." Modify the previous program to handle the numbers through 100 so that all numbers come out as we really say them. For example, 13 would be "thirteen" and 100 would be "one hundred."//
 char line[100]; 
 int main (void)
 {
