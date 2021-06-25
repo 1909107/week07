@@ -1,4 +1,5 @@
 #include <stdio.h>
+//Write a program to print out the multiplication table.//
 char line[100]; 
 int main() {
     int n, i;
