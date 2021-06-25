@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Write a program to perform date arithmetic such as how many days there are between 6/6/90 and 4/3/92//
 char line[100]; 
 int año (int año) {
     if (((año % 4) == 0 && (año % 100) != 0) || (año % 400) == 0)
@@ -98,7 +99,7 @@ sscanf(line, "%d/%d/%d", &start_date[0], &start_date[1], &start_date[2]);
     }
     printf("Debe contarse el ultimo dia ? (Y/N) ");
     fgets(line, sizeof(line), stdin);
-    scanf(line,"%s", last_day);
+    sscanf(line,"%s", last_day);
     if(last_day[0] == 'Y' || last_day[0] == 'y')
         add_last_day = 1;
     else
