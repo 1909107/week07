@@ -1,4 +1,5 @@
 #include <stdio.h>
+//A leap year is any year divisible by 4, unless the year is divisible by 100, but not 400. Write a program to tell if a year is a leap year//
 char line[100]; 
 int main() {
 int año;
