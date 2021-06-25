@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Write a program to tell if a number is prime//
 char line[100]; 
 int main(){
 int numero;
