@@ -1,4 +1,5 @@
 #include<stdio.h>
+//Write a program that takes a series of numbers and counts the number of positive and negative values//
 char line[25];
 int main()
 {
