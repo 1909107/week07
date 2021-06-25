@@ -1,4 +1,5 @@
 #include <stdio.h>
+//: Write a program that converts numbers to words. For example, 895 results in "eight nine five."//
 char line[100]; 
 int main()
 {
