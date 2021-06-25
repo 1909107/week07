@@ -1,4 +1,5 @@
 #include <stdio.h>
+//Given an amount of money (less than $1.00), compute the number of quarters, dimes, nickels, and pennies needed.//
 char line[100]; 
 int centavos;
 int cuartos = 0;
