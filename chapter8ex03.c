@@ -1,4 +1,5 @@
 #include<stdio.h>
+//: Write a program to average n numbers.//
 char line[100]; 
 int main()
 {
