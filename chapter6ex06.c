@@ -1,4 +1,5 @@
 #include <stdio.h>
+//Write a program that, given the number of hours an employee worked and the hourly wage, computes the employee's weekly pay. Count any hours over 40 as overtime at time and a half//
 char line[100]; 
 int main() {
 int horas,dinero,pago;
