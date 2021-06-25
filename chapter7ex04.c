@@ -1,4 +1,5 @@
 #include <stdio.h>
+// Write a program to add an 8% sales tax to a given amount and round the result to the nearest penny//
 char line[100]; 
 int main()
 {
