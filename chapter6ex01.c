@@ -1,4 +1,5 @@
 #include <stdio.h>
+//* Write a program to find the square of the distance between two points*//
 #include <math.h>
 char line[100];             
 float distance;          
